@@ -1,7 +1,70 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <style>
+    body {
+        background-image: url("images/seattle.jpg");
+        background-repeat: no-repeat;
+        background-size: contain cover;
+        background-attachment: fixed;
+        background-position: left bottom;
+        background-color:  black;
+        font-family: 'Avenir Next', sans-serif;
+        color: rgb(252,255,255,.75);
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+    
+    }
+    .background-tint {
+        background-color: rgba(0,0,0,0.65);
+        background-blend-mode: multiply;
+    }
+
+    .panel {
+        display: flex;
+        flex-flow: wrap;
+        padding-left: 2em;
+        position: absolute;
+        bottom: 1em;      
+        align-items:flex-start;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding-right: 2em;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2em;
+        letter-spacing: .02em;
+        max-width: 38em;
+        padding-right: 2em;
+        flex-grow: 1;
+        margin-right: auto;
+    }
+
+
+    img {
+        opacity: 0.65;
+        padding-right: 1em;
+    }
+
+    .social {
+        flex-shrink: 0; 
+        padding-top: 1.5em;
+    }
+
+    </style>
+<body class="background-tint">
+    <div class="panel">
+        <h1>Michael Agustin</h1>
+        <p>Michael invented GameSalad, a drag-and-drop game creation tool he grew from zero to over one million developers worldwide. He is a serial entrepreneur who can execute technically and creatively. He is now looking at new applications in the fields of computer vision and augmented reality.</p>
+        <div class="social">
+            <a href="https://www.facebook.com/michaelagustin"><img src="images/facebook.svg" height="42" width="42"></a>
+            <a href="https://www.linkedin.com/in/michaelagustin"><img src="images/linkedin.svg" height="42" width="42"></a>
+        </div>
+    </div>
 </body>
 </html>
