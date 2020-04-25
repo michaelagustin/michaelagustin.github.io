@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <meta name="viewport" content="width=device-width">
     <style>
     body {
         background-image: url("images/seattle.jpg");
@@ -46,6 +47,10 @@
         line-height: 2em;
         letter-spacing: .02em;
         max-width: 38em;
+
+        @media screen and (max-device-width: @iphone-screen) {
+            max-width: @iphone-screen;
+        }
         padding-right: 2em;
         flex-grow: 1;
         margin-right: auto;
