@@ -7,6 +7,11 @@
         background-size: contain cover;
         background-attachment: fixed;
         background-position: left bottom;
+
+        @media (max-width: @iphone-screen) {
+            background-attachment: scroll;
+        }
+
         background-color:  black;
         font-family: 'Avenir Next', sans-serif;
         color: rgb(252,255,255,.75);
